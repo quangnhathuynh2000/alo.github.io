@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-Do List</title>
+    <style>
+        /* Style the completed items differently */
+        
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="new-item"></textarea>
+    <button onclick="addItem()">Add</button>
+    <ul id="todo-list"></ul>
+    <script>
+        function addItem() {
+            // Get the new item from the textarea
+            const newItem = document.getElementById('new-item').value;
+
+            // Create a new li element
+            const li = document.createElement('li');
+
+            // Set the inner text of the li to the new item
+            li.innerText = newItem;
+
+            // Add a click event listener to the li
+            li.addEventListener('click', toggleCompleted);
+
+            // Append the li to the todo-list
+            document.getElementById('todo-list').appendChild(li);
+        }
+
+        function toggleCompleted(event) {
+            // Toggle the "completed" class on the li element that was clicked
+            event.target.classList.toggle('completed');
+        }
+    </script>
+</body>
+
+</html>

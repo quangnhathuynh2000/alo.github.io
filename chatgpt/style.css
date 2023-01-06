@@ -1,0 +1,88 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    
+    nav li {
+        display: inline-block;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .clothing-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .item {
+        width: 30%;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .item img {
+        width: 100%;
+    }
+    
+    .item h2 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+    
+    .item p {
+        font-size: 1.1em;
+        color: #999;
+        margin: 10px 0;
+    }
+    
+    button {
+        padding: 10px;
+        border: none;
+        background-color: #333;
+        color: #fff;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .social-media a {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    
+    .social-media img {
+        width: 20px;
+    }
